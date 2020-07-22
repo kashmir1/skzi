@@ -48,40 +48,52 @@
        </div>
 
      </div>
-
  </header>
- </div>
-
-
 
 <main class="main-page">
-  <section class="card-create">
-    <h1>Карта водителя для тахографа СКЗИ, ЕСТР -  заказать онлайн за 5 минут</h1>
-    <span class="card-create__subtext">Бесплатная доставка от 15 до 30 дней</span>
-    <span class="card-create__rule">
+  <div class="container">
+    <section class="card-create">
+      <div class="card-create__left-col">
+        <h1 class="titles__h1">Оформить карту водителя для тахографа СКЗИ, ЕСТР <span class="titles__h1--blue">онлайн за 5 минут </span></h1>
+        <span class="card-create__subtext">Бесплатная доставка от 15 до 30 дней</span>
+        <span class="card-create__rule">
       Сервис осуществляет передачу документов на изготовление, замену, обновление карт водителя для тахографа согласно приказу № 36 Минтранса РФ от 13.02.2013 г
     </span>
-    <form class="form" action="" method="post">
-      <h2 class="form__title">Заполните форму для оформления и получения карты</h2>
-      <input class="form__input" type="text" placeholder="Ваше ФИО" required>
-      <select class="form__select" name="" id="statement-type">
-        <option value="Тип заявления"></option>
-        <option value="">Обновление карты</option>
-        <option value="">Новая карта</option>
-        <option value="">Замена карты</option>
-      </select>
-      <select class="form__select" name="" id="card-type">
-        <option value="Тип карты"></option>
-        <option value="">СКЗИ</option>
-        <option value="">ЕСТР</option>
-        <option value="">без СКЗИ</option>
-      </select>
-      <button class="form__button" type="submit">Оформить заявку</button>
-      <span class="form__note">Срок изготовление от 7 до 15 рабочих дней.
+      </div>
+
+      <form class="form" action="" method="post">
+        <div class="form__small-form">
+          <h2 class="form__title">Заполните форму для оформления и получения карты</h2>
+          <input class="form__input" type="text" placeholder="Ваше ФИО" required>
+          <div class="form__select-wrapper">
+            <div class="custom-select form__select-type">
+              <select>
+                <option value="0">Тип заявления</option>
+                <option value="1">Обновление карты</option>
+                <option value="2">Новая карта</option>
+                <option value="3">Замена карты</option>
+              </select>
+            </div>
+            <div class="custom-select form__select-card-type">
+              <select>
+                <option value="0">Тип карты</option>
+                <option value="1">СКЗИ</option>
+                <option value="2">ЕСТР</option>
+                <option value="3">без СКЗИ</option>
+              </select>
+            </div>
+          </div>
+
+
+        </div>
+        <button class="form__button" type="submit">Оформить заявку</button>
+        <span class="form__note">Срок изготовление от 7 до 15 рабочих дней.
 Доставка осуществляется всей по России.
 </span>
-    </form>
-  </section>
+      </form>
+    </section>
+  </div>
+
   <section class="card-price">
     <h2>Стоимость карты тахографа для водителя</h2>
     <ul class="card-price__list">
@@ -230,6 +242,6 @@
 <footer>
 
 </footer>
-<script></script>
+<script src="js/select.js"></script>
 </body>
 </html>
