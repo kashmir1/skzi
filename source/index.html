@@ -6,37 +6,52 @@
   <title>Тайтл</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <!--Хедер-->
 <body>
-<header class="header">
- <span class="header__topbar">Водительские карты онлайн</span>
-  <span class="header__topbar">Электронный запрос: </span> <a href="mailto:info@skzi.net">info@skzi.net</a>
-  <img class="header__logo" src="img/logo.svg" alt="">
 
-  <nav class="navigation">
-    <ul class="navigation__list">
-      <li class="navigation__item">
-        <a class="navigation__link" href="">
-          Водительские карты
-        </a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="">
-          Купить тахограф
-        </a>
-      </li>
-      <li class="navigation__item">
-        <a class="navigation__link" href="">
-          О компании
-        </a>
-      </li>
-    </ul>
-    <a class="header__phone" href="+79003003030">8 900 300 30 30</a>
-    <span class="header__timetable">с 10:00 до 17:00 пн-пт</span>
-  </nav>
-</header>
+   <header class="header">
+     <div class="container">
+       <div class="header__topbar">
+         <span class="header__topbar-text">Водительские карты онлайн</span>
+         <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net"> info@skzi.net</a></div>
+       </div>
+     </div>
+     <div class="header__main-bar">
+       <div class="container header__main-bar-wrapper">
+         <img class="header__logo" src="img/logo.svg" alt="">
+         <nav class="navigation">
+           <ul class="navigation__list">
+             <li class="navigation__item">
+               <a class="navigation__link navigation__link--active" href="">
+                 Водительские карты
+               </a>
+             </li>
+             <li class="navigation__item">
+               <a class="navigation__link" href="">
+                 Купить тахограф
+               </a>
+             </li>
+             <li class="navigation__item">
+               <a class="navigation__link" href="">
+                 О компании
+               </a>
+             </li>
+           </ul>
+           <div class="navigation__contacts">
+             <a class="header__phone" href="+79003003030">8 900 300 30 30</a>
+             <span class="header__timetable">с 10:00 до 17:00 пн-пт</span>
+           </div>
+
+         </nav>
+       </div>
+
+     </div>
+
+ </header>
+ </div>
+
 
 
 <main class="main-page">

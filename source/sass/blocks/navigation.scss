@@ -1,0 +1,41 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.navigation__item {
+  margin-left: 32px;
+  height: 64px;
+}
+
+.navigation__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #6B6B6B;
+  height: 64px;
+}
+
+.navigation__link--active {
+  color: #000000;
+  border-bottom: 4px solid #4576F3;
+}
+
+.navigation__contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-left: 32px;
+}
+
+
