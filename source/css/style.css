@@ -314,7 +314,7 @@ body {
           box-sizing: border-box;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 1%;
   font-family: "Gotham Pro", "Arial", sans-serif; }
 
 .container {
@@ -471,10 +471,14 @@ body {
 .card-create {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 53px; }
 
 .card-create__left-col {
-  min-width: 586px; }
+  width: 586px; }
 
 .card-create__subtext {
   display: inline-block;
@@ -494,10 +498,14 @@ body {
   line-height: 16px; }
 
 .form__small-form {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 392px;
   background-color: #ffffff;
   border-radius: 8px;
   -webkit-box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.08); }
+          box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.08);
+  padding: 23px 32px 38px; }
 
 .form__title {
   font-size: 18px;
@@ -519,13 +527,30 @@ body {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-bottom: 24px; }
 
 .form__select-type {
   width: 195px; }
 
 .form__select-card-type {
   width: 109px; }
+
+.form__button {
+  width: 100%;
+  background-color: #4576F3;
+  border-radius: 4px;
+  height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  border: 0; }
+
+.form__note {
+  display: inline-block;
+  margin-top: 10px;
+  color: #000000;
+  font-size: 13px;
+  line-height: 20px; }
 
 .custom-select {
   position: relative; }
@@ -543,7 +568,7 @@ body {
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 7px;
+  top: 10px;
   right: 10px;
   width: 12px;
   height: 6px;
@@ -558,10 +583,9 @@ body {
 
 /* style the items (options), including the selected item: */
 .select-items div, .select-selected {
-  color: #000000;
+  color: #979797;
   padding-top: 11px;
   padding-bottom: 11px;
-  border: 1px solid transparent;
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   font-size: 14px; }
@@ -570,11 +594,12 @@ body {
 .select-items {
   position: absolute;
   background-color: #ffffff;
-  color: #000000;
+  color: #979797;
   top: 100%;
   left: 0;
   right: 0;
-  z-index: 99; }
+  z-index: 99;
+  padding-left: 15px; }
 
 /* Hide the items when the select box is closed: */
 .select-hide {

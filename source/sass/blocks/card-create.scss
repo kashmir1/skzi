@@ -1,9 +1,11 @@
 .card-create {
   display: flex;
+  justify-content: space-between;
+  margin-top: 53px;
 }
 
 .card-create__left-col {
-  min-width: 586px;
+  width: 586px;
 }
 
 .card-create__subtext {
