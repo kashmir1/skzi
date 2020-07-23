@@ -801,4 +801,39 @@ body {
 .reviews__review {
   width: 476px; }
 
+.faq__question {
+  background-color: #EBEEF4;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: bold;
+  padding: 17px 24px 19px;
+  cursor: pointer; }
+
+.faq__question--open {
+  border: 1px solid #E5E5E5;
+  background-color: #ffffff;
+  border-bottom: 0; }
+
+.faq__answer {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000;
+  border: 1px solid #E5E5E5;
+  border-top: 0; }
+
+.faq__close {
+  background-image: url("../img/downarrow.svg");
+  background-repeat: no-repeat;
+  background-position: 98%; }
+
+.faq__open {
+  background-image: url("../img/uparrow.svg");
+  background-repeat: no-repeat;
+  background-position: 98%; }
+
 /*# sourceMappingURL=style.css.map */
