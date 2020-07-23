@@ -1,7 +1,6 @@
 let answers = document.querySelectorAll('.faq__answer');
 let questions = document.querySelectorAll('.faq__question');
 
-
 answers.forEach(function(el) {
   el.style.display = 'none';
 });
