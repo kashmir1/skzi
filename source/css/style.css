@@ -483,10 +483,15 @@ body {
 
 .titles__h2 {
   font-size: 32px;
-  line-height: 40px; }
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 15px; }
 
 .titles__h2--card-price {
   width: 485px; }
+
+.titles__h2--card-create-how {
+  width: 424px; }
 
 .card-create {
   display: -webkit-box;
@@ -704,5 +709,96 @@ body {
 
 .about-card__left-col {
   width: 538px; }
+
+.card-create-how {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.card-create-how__right-col {
+  width: 562px;
+  margin-left: 40px; }
+
+.card-delivery__list {
+  white-space: pre-wrap;
+  color: #555555;
+  font-size: 14px;
+  line-height: 20px; }
+
+.card-delivery__title {
+  font-size: 24px;
+  line-height: 32px;
+  width: 550px; }
+
+.card-delivery__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.reviews__img-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden; }
+
+.reviews__user-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.reviews__user-name {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+  margin-right: 8px; }
+
+.reviews__user-info {
+  margin-left: 16px; }
+
+.reviews__user-name-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.reviews__star {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat; }
+
+.reviews__star--yellow {
+  background-image: url("../img/yellow-star.svg"); }
+
+.reviews__star--gray {
+  background-image: url("../img/grey-star.svg"); }
+
+.reviews__date {
+  font-size: 13px;
+  color: #828282; }
+
+.reviews__review {
+  font-size: 14px;
+  line-height: 20px;
+  color: #000000; }
+
+.reviews__review {
+  width: 476px; }
 
 /*# sourceMappingURL=style.css.map */

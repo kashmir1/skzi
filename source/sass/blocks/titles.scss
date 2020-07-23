@@ -10,8 +10,14 @@
 .titles__h2 {
   font-size: 32px;
   line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 .titles__h2--card-price {
   width: 485px;
+}
+
+.titles__h2--card-create-how {
+  width: 424px;
 }
