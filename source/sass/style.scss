@@ -4,9 +4,13 @@
 @import "global/font.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
+@import "global/content";
+
 @import "blocks/header";
 @import "blocks/navigation";
 @import "blocks/titles";
 @import "blocks/card-create";
 @import "blocks/form";
 @import "blocks/card-price";
+@import "blocks/about-card";
+

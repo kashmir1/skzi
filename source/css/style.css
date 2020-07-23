@@ -349,6 +349,19 @@ body {
   src: url("../fonts/GothamPro-Bold.woff2");
   src: url("../fonts/GothamPro-Bold.woff"); }
 
+.content__p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B6B6B;
+  margin-top: 0; }
+
+.content__a {
+  color: #4576F3;
+  text-decoration: none; }
+
+.content__ol {
+  padding-left: 12px; }
+
 .header__topbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -680,5 +693,16 @@ body {
 .card-price__delivery {
   color: #979797;
   font-size: 14px; }
+
+.about-card__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.about-card__left-col {
+  width: 538px; }
 
 /*# sourceMappingURL=style.css.map */
