@@ -524,6 +524,7 @@ body {
   color: #6B6B6B; }
 
 .card-create__rule {
+  color: #555555;
   margin-top: 114px;
   width: 418px;
   font-size: 12px;
@@ -678,7 +679,7 @@ body {
 
 /* style the items (options), including the selected item: */
 .select-selected:not(.select-arrow-active) {
-  color: #979797; }
+  color: #000000; }
 
 .select-items div, .select-selected {
   color: #000000;
@@ -697,7 +698,9 @@ body {
   left: 0;
   right: 0;
   z-index: 99;
-  padding-left: 15px; }
+  padding-left: 15px;
+  -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2); }
 
 /* Hide the items when the select box is closed: */
 .select-hide {
@@ -708,7 +711,8 @@ body {
   color: #4576F3; }
 
 .card-price {
-  margin-top: 91px; }
+  margin-top: 91px;
+  margin-bottom: 75px; }
 
 .card-price__list {
   list-style: none;
@@ -734,6 +738,9 @@ body {
           flex-direction: column; }
   .card-price__item:last-child {
     margin-right: 0; }
+  .card-price__item:hover {
+    -webkit-box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); }
 
 .card-price__img {
   margin-left: auto;
@@ -772,6 +779,9 @@ body {
   color: #979797;
   font-size: 14px; }
 
+.about-card {
+  margin-bottom: 97px; }
+
 .about-card__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -786,11 +796,15 @@ body {
 .card-create-how {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-bottom: 73px; }
 
 .card-create-how__right-col {
   width: 562px;
   margin-left: 40px; }
+
+.card-delivery {
+  margin-bottom: 87px; }
 
 .card-delivery__list {
   white-space: pre-wrap;
@@ -800,6 +814,7 @@ body {
 
 .card-delivery__title {
   font-size: 24px;
+  margin-bottom: 0;
   line-height: 32px;
   width: 550px; }
 
@@ -810,6 +825,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+.reviews {
+  margin-bottom: 85px; }
 
 .reviews__list {
   list-style: none;
@@ -873,6 +891,9 @@ body {
 
 .reviews__review {
   width: 476px; }
+
+.faq {
+  margin-bottom: 88px; }
 
 .faq__wrapper {
   display: -webkit-box;

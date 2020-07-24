@@ -151,7 +151,8 @@
 /* style the items (options), including the selected item: */
 
 .select-selected:not(.select-arrow-active) {
-  color: #979797;
+  //color: #979797;
+  color: #000000;
 }
 
 .select-items div,.select-selected {
@@ -173,6 +174,7 @@
   right: 0;
   z-index: 99;
   padding-left: 15px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Hide the items when the select box is closed: */
