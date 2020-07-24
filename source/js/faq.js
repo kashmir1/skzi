@@ -2,7 +2,7 @@ let answers = document.querySelectorAll('.faq__answer');
 let questions = document.querySelectorAll('.faq__question');
 
 answers.forEach(function(el) {
-  el.style.display = 'none';
+  el.style.display = 'block';
 });
 
 questions.forEach(function(el) {
@@ -28,19 +28,3 @@ for (let i = 0; i < themeButton.length; i++) {
     selectSpan[i].classList.toggle('form__span-select2');
   })
 }
-
-
-
-
-// let button = document.getElementById('selected'); // Assumes element with id='button'
-//
-// button.onclick = function(evt) {
-//   evt.preventDefault();
-//   let div = document.getElementById('selectspan');
-//   if (div.style.display !== 'none') {
-//     div.style.display = 'none';
-//   }
-//   else {
-//     div.style.display = 'block';
-//   }
-// };
