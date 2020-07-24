@@ -69,6 +69,10 @@
 .footer__nav-link {
   color: #FFFFFF;
   text-decoration: none;
+
+  &:hover {
+    color: #A1A1A1;
+  }
 }
 
 .footer__menu {
