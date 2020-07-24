@@ -9,11 +9,11 @@ questions.forEach(function(el) {
   el.onclick = () => {
     if (el.nextSibling.nextSibling.style.display === 'none') {
       el.nextSibling.nextSibling.style.display = 'block';
-      el.classList.remove('faq__close');
+      el.classList.remove('faq__close', 'faq__hover');
       el.classList.add('faq__open', 'faq__question--open');
     } else {
       el.nextSibling.nextSibling.style.display = 'none';
-      el.classList.add('faq__close');
+      el.classList.add('faq__close', 'faq__hover');
       el.classList.remove('faq__open', 'faq__question--open');
     }
   };

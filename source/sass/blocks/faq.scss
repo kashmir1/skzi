@@ -26,6 +26,7 @@
 }
 
 .faq__question {
+
   background-color: #EBEEF4;
   border-radius: 8px;
   font-size: 16px;
@@ -35,6 +36,13 @@
   padding: 17px 24px 19px;
   margin-bottom: 24px;
   cursor: pointer;
+}
+
+.faq__hover {
+  &:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 0px 1px rgba(81, 116, 186, 0.6);
+  }
 }
 
 .faq__question--open {
