@@ -19,20 +19,16 @@ questions.forEach(function(el) {
   };
 });
 
-let page = document.querySelectorAll('.form__span-select');
+let selectSpan = document.querySelectorAll('.form__span-select');
 let themeButton = document.querySelectorAll('.select-selected');
 
 for (let i = 0; i < themeButton.length; i++) {
   themeButton[i].addEventListener('click', function (evt) {
     evt.preventDefault();
-    page[i].classList.toggle('form__span-select2');
+    selectSpan[i].classList.toggle('form__span-select2');
   })
 }
 
-// themeButton.onclick = function(evt) {
-//   evt.preventDefault();
-//   page.classList.toggle('form__span-select2');
-// };
 
 
 
