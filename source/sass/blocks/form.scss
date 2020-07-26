@@ -9,6 +9,8 @@
 
 .form__label {
   position: relative;
+  color: #A2A2A2;
+  font-size: 12px;
 }
 
 .form__title {
@@ -107,6 +109,21 @@
   }
 }
 
+.form__button--cancel {
+  background-color: #E5E5E5;
+  width: 162px;
+  margin-right: 8px;
+  color: #000000;
+
+  &:hover {
+    background-color: #DADADA;
+  }
+}
+
+.form__button--pay {
+  width: 194px;
+}
+
 .form__note {
   display: inline-block;
   margin-top: 10px;
@@ -185,4 +202,60 @@
 .select-items div:hover, .same-as-selected {
   background-color: #ffffff;
   color: #4576F3;
+}
+
+.form__custom-checkbox {
+  color: #979797;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 20px;
+  position: relative;
+  white-space: pre-wrap;
+}
+
+.form__custom-checkbox--service {
+  color: #000000;
+  font-size: 16px;
+}
+
+.form__checkbox {
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+  z-index: -1;
+
+  + .form__custom-checkbox {
+    &::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 0;
+      width: 16px;
+      height: 16px;
+      background-color: #E5E5E5;
+      border-radius: 3px;
+    }
+  }
+
+  &:hover {
+    + .form__custom-checkbox {
+      &::before {
+        content: '';
+        box-shadow: 0 0 0 1px #4576F3;
+        //border: 1px solid #4576F3;
+      }
+    }
+  }
+
+  &:checked {
+    + .form__custom-checkbox {
+      &::before {
+        background-color: #4576F3;
+        background-image: url("../img/check.svg");
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-position: center;
+      }
+    }
+  }
 }

@@ -546,7 +546,9 @@ body {
   padding: 23px 32px 38px; }
 
 .form__label {
-  position: relative; }
+  position: relative;
+  color: #A2A2A2;
+  font-size: 12px; }
 
 .form__title {
   font-size: 18px;
@@ -641,6 +643,17 @@ body {
   .form__button:hover {
     background-color: #3961C8; }
 
+.form__button--cancel {
+  background-color: #E5E5E5;
+  width: 162px;
+  margin-right: 8px;
+  color: #000000; }
+  .form__button--cancel:hover {
+    background-color: #DADADA; }
+
+.form__button--pay {
+  width: 194px; }
+
 .form__note {
   display: inline-block;
   margin-top: 10px;
@@ -709,6 +722,43 @@ body {
 .select-items div:hover, .same-as-selected {
   background-color: #ffffff;
   color: #4576F3; }
+
+.form__custom-checkbox {
+  color: #979797;
+  font-size: 12px;
+  line-height: 16px;
+  padding-left: 20px;
+  position: relative;
+  white-space: pre-wrap; }
+
+.form__custom-checkbox--service {
+  color: #000000;
+  font-size: 16px; }
+
+.form__checkbox {
+  height: 1px;
+  width: 1px;
+  opacity: 0;
+  z-index: -1; }
+  .form__checkbox + .form__custom-checkbox::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background-color: #E5E5E5;
+    border-radius: 3px; }
+  .form__checkbox:hover + .form__custom-checkbox::before {
+    content: '';
+    -webkit-box-shadow: 0 0 0 1px #4576F3;
+            box-shadow: 0 0 0 1px #4576F3; }
+  .form__checkbox:checked + .form__custom-checkbox::before {
+    background-color: #4576F3;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center; }
 
 .card-price {
   margin-top: 91px;
@@ -1080,5 +1130,162 @@ body {
   font-size: 12px;
   color: #FFFFFF;
   margin-left: 170px; }
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */ }
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  margin: 120px auto;
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 980px; }
+
+/* The Close Button */
+.modal__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.modal__request-left-col {
+  width: 362px; }
+
+.modal__request-right-col {
+  width: 452px; }
+
+.modal__input-wrapper {
+  margin-bottom: 24px; }
+
+.modal__service-price {
+  letter-spacing: -0.01em;
+  color: #4576F3;
+  font-weight: bold;
+  font-size: 16px; }
+
+.modal__service-note {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: -0.01em;
+  color: #6B6B6B; }
+
+.modal__term {
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #A2A2A2; }
+
+.modal__service-note-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 25px;
+  margin-bottom: 22px; }
+
+.modal__service-check-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px; }
+
+.modal__service-note {
+  display: inline-block;
+  margin-bottom: 7px; }
+
+.modal__sum-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.modal__sum-note {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold; }
+
+.modal__sum {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #4576F3; }
+
+.modal__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 21px; }
+
+.modal__docs-note {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B6B6B; }
+
+.modal__docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.modal__docs-item {
+  position: relative;
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.modal__docs--passport {
+  position: relative; }
+  .modal__docs--passport::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 24px;
+    background-image: url("../img/passport.svg");
+    background-repeat: no-repeat; }
+
+.modal__docs-item-note {
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
