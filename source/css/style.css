@@ -1105,7 +1105,11 @@ body {
 .footer__menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .footer__menu-col {
   margin-right: 104px; }
@@ -1153,6 +1157,7 @@ body {
 
 /* Modal Content/Box */
 .modal-content {
+  position: relative;
   border-radius: 8px;
   -webkit-box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
@@ -1176,7 +1181,14 @@ body {
   width: 362px; }
 
 .modal__request-right-col {
-  width: 452px; }
+  width: 452px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .modal__input-wrapper {
   margin-bottom: 24px; }
@@ -1260,18 +1272,20 @@ body {
 .modal__docs-list {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  margin-top: 20px; }
 
 .modal__docs-item {
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  margin-bottom: 20px; }
 
 .modal__docs--passport {
   position: relative; }
@@ -1285,7 +1299,65 @@ body {
     background-image: url("../img/passport.svg");
     background-repeat: no-repeat; }
 
+.modal__docs--drive-license {
+  position: relative; }
+  .modal__docs--drive-license::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 17px;
+    background-image: url("../img/drive-license.svg");
+    background-repeat: no-repeat; }
+
+.modal__docs--card-copy {
+  position: relative; }
+  .modal__docs--card-copy::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/card-copy.svg");
+    background-repeat: no-repeat; }
+
+.modal__docs--snils {
+  position: relative; }
+  .modal__docs--snils::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/snils.svg");
+    background-repeat: no-repeat; }
+
+.modal__docs--photo {
+  position: relative; }
+  .modal__docs--photo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/photo.svg");
+    background-repeat: no-repeat; }
+
 .modal__docs-item-note {
   font-size: 14px; }
+
+.modal__rule-wrapper {
+  margin-top: auto; }
+
+.modal__step {
+  position: absolute;
+  top: 30px;
+  right: 23px;
+  color: #4DB45E;
+  font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */

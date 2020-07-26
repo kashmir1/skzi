@@ -16,6 +16,7 @@
 
 /* Modal Content/Box */
 .modal-content {
+  position: relative;
   border-radius: 8px;
   box-shadow: 0px 4px 48px rgba(0, 0, 0, 0.1);
   background-color: #fefefe;
@@ -51,6 +52,8 @@
 
 .modal__request-right-col {
   width: 452px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__input-wrapper {
@@ -128,13 +131,15 @@
 
 .modal__docs-list {
   @include liststyle-none;
+  margin-top: 20px;
 }
 
 .modal__docs-item {
   position: relative;
-  padding-left: 30px;
+  padding-left: 35px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .modal__docs--passport {
@@ -151,6 +156,77 @@
   }
 }
 
+.modal__docs--drive-license {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 17px;
+    background-image: url("../img/drive-license.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.modal__docs--card-copy {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/card-copy.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.modal__docs--snils {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/snils.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+
+.modal__docs--photo {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/photo.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+
+
 .modal__docs-item-note {
   font-size: 14px;
+}
+
+.modal__rule-wrapper {
+  margin-top: auto;
+}
+
+.modal__step {
+  position: absolute;
+  top: 30px;
+  right: 23px;
+  color: #4DB45E;
+  font-size: 18px;
 }
