@@ -874,6 +874,9 @@ h2 {
   width: 562px;
   margin-left: 40px; }
 
+.card-create-how__right-col--tacho h2 {
+  margin-top: 0; }
+
 .card-delivery {
   margin-bottom: 87px; }
   .card-delivery h2 {
@@ -963,6 +966,9 @@ h2 {
   width: 476px; }
 
 .reviews__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%; }
 
 .reviews__link-a {
@@ -1131,11 +1137,7 @@ h2 {
 .footer__menu {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  display: flex; }
 
 .footer__menu-col {
   margin-right: 104px; }
@@ -1481,5 +1483,59 @@ h2 {
   font-size: 14px;
   color: #4576F3;
   font-weight: bold; }
+
+.feedback {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(81, 116, 186, 0.6)), to(rgba(81, 116, 186, 0.5))), url("../img/formbg.jpg");
+  background-image: linear-gradient(90deg, rgba(81, 116, 186, 0.6) 0%, rgba(81, 116, 186, 0.5) 100%), url("../img/formbg.jpg");
+  mix-blend-mode: normal;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 57px;
+  padding-bottom: 48px;
+  margin-bottom: 97px; }
+  .feedback h2 {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    width: 434px; }
+  .feedback h3 {
+    width: 300px; }
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.feedback__note {
+  display: inline-block;
+  width: 344px;
+  line-height: 20px;
+  color: #FFFFFF;
+  font-size: 14px; }
+
+.feedback__rule {
+  color: #ffffff;
+  margin-top: 114px;
+  width: 418px;
+  font-size: 10px;
+  display: inline-block;
+  background-image: url("../img/emblem.png");
+  background-repeat: no-repeat;
+  min-height: 48px;
+  padding-left: 50px;
+  line-height: 16px; }
+
+.feedback__left-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */
