@@ -1893,4 +1893,31 @@ ul.breadcrumb li a:hover {
   line-height: 24px;
   width: 179px; }
 
+.payment p {
+  width: 740px; }
+
+.payment h2 {
+  font-size: 20px;
+  color: #000000; }
+
+.payment .payment__subtext {
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B6B6B; }
+
+.payment__card-wrapper {
+  margin-bottom: 60px; }
+
+.payment__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 740px; }
+
 /*# sourceMappingURL=style.css.map */
