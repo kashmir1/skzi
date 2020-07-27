@@ -230,3 +230,65 @@
   color: #4DB45E;
   font-size: 18px;
 }
+
+
+#myModal-2 {
+
+  .modal-content {
+    position: relative;
+    width: 620px;
+    box-sizing: border-box;
+  }
+
+  .form__input {
+    width: 274px;
+  }
+
+  .custom-select {
+    width: 572px;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    border: 1px solid #E5E5E5;
+    width: 572px;
+    height: 137px;
+    resize: none;
+    padding: 15px;
+    outline: #cfcfcf;
+    margin-bottom: 16px;
+  }
+}
+
+.modal__question-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 70px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-image: url("../img/close.svg");
+  }
+}
+
+.modal__button-faq {
+  display: flex;
+  justify-content: flex-end;
+}
