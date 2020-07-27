@@ -25,12 +25,12 @@
          <nav class="navigation">
            <ul class="navigation__list">
              <li class="navigation__item">
-               <a class="navigation__link navigation__link--active" href="">
+               <a class="navigation__link" href="">
                  Водительские карты
                </a>
              </li>
              <li class="navigation__item">
-               <a class="navigation__link" href="">
+               <a class="navigation__link navigation__link--active" href="">
                  Купить тахограф
                </a>
              </li>
@@ -55,8 +55,9 @@
   <div class="container">
     <section class="card-create">
       <div class="card-create__left-col">
-        <h1>Оформить карту водителя для тахографа СКЗИ, ЕСТР</h1><span class="titles__h1--blue">онлайн за 5 минут </span>
-        <span class="card-create__subtext">Бесплатная доставка от 15 до 30 дней</span>
+        <h1>Купить тахограф с установкой</h1><span class="titles__h1--blue">от 31 000 рублей</span>
+        <span class="card-create__subtext card-create__subtext--tachograph">Выполняем работу по установке, калибровке, ремонту тахографов
+по России.</span>
         <span class="card-create__rule">
       Сервис осуществляет передачу документов на изготовление, замену, обновление карт водителя для тахографа согласно приказу № 36 Минтранса РФ от 13.02.2013 г
     </span>
@@ -64,81 +65,126 @@
 
       <div class="form__small-form">
       <form class="form" action="" method="post">
-          <h2>Заполните форму для оформления и получения карты</h2>
-        <label class="form__label">
+          <h2 class="form__title">Заполните форму для обратной связи.</h2>
+        <label class="form__label form__label--inner">
           <input class="form__input" type="text" placeholder="Ваше ФИО" required>
           <span class="form__span">Ваше ФИО</span>
         </label>
+        <label class="form__label form__label--inner">
+          <input class="form__input" type="text" placeholder="Контактный телефон" required>
+          <span class="form__span">Контактный телефон</span>
+        </label>
 
-          <div class="form__select-wrapper">
-            <div class="custom-select form__select-type">
-              <select>
-                <option value="0">Тип заявления</option>
-                <option value="1" selected>Обновление карты</option>
-                <option value="2">Новая карта</option>
-                <option value="3">Замена карты</option>
-              </select>
-              <span class="form__span-select">Тип заявления</span>
-            </div>
-            <div class="custom-select form__select-card-type">
-              <select>
-                <option value="0">Тип карты</option>
-                <option value="1" selected>СКЗИ</option>
-                <option value="2">ЕСТР</option>
-                <option value="3">без СКЗИ</option>
-              </select>
-              <span class="form__span-select">Тип карты</span>
-            </div>
-          </div>
-          <a class="form__button" id="myBtn" href="">Оформить заявку</a>
-        <span class="form__note">Срок изготовление от 7 до 15 рабочих дней.
-Доставка осуществляется всей по России.
+          <a class="form__button" id="myBtn" href="">Отправить заявку</a>
+        <span class="form__note">Наши специалисты свяжутся с вами
+в течение 15 минут.
 </span>
       </form>
       </div>
     </section>
-    <section class="card-price">
-      <h2>Стоимость карты тахографа для водителя</h2>
+    <section class="card-price catalog">
+      <h2>Популярные тахографы
+        на грузовые автомобили</h2>
+      <p class="catalog__description">Предварительная стоимость тахографа на грузовые автомобили рассчитана  с учетом установки и калибровки устройства</p>
       <ul class="card-price__list">
         <li class="card-price__item">
-          <img class="card-price__img" src="img/skzi-card.png" alt="">
+          <img class="card-price__img" src="img/drive5.png" alt="">
           <div class="card-price__item-content">
-            <h3 class="card-price__title">СКЗИ</h3>
-            <p class="card-price__desc">
-              Поддерживает тахографы: АТОЛ DRIVE 5, АТОЛ Drive Smart, VDO DTCO 3283, EFAS V2 RUS, ШТРИХ-ТахоRUS, ТЦА-02НК, КАСБИ DT-20, Меркурий ТА-001
-            </p>
+            <h3 class="card-price__title">АТОЛ DRIVE 5</h3>
+            <ul class="catalog__list">
+              <li class="catalog__item">Быстрая скорость печати отчетов</li>
+              <li class="catalog__item">2 сим карты в комплекте  GSM-модемом</li>
+              <li class="catalog__item">Сертифицирован для перевозки опасных грузов</li>
+            </ul>
           </div>
           <div class="card-price__item-bottom">
-            <span class="card-price__price">3 850 руб.</span>
-            <span class="card-price__delivery">Бесплатная доставка 7-15 дней</span>
+            <span class="card-price__price">35 000 руб.</span>
+            <span class="card-price__delivery">С учетом установки и калибровки</span>
           </div>
         </li>
 
         <li class="card-price__item">
-          <img class="card-price__img" src="img/estr-card.png" alt="">
+          <img class="card-price__img" src="img/smart.png" alt="">
           <div class="card-price__item-content">
-            <h3 class="card-price__title">ЕСТР</h3>
-            <p class="card-price__desc">
-              Поддерживает тахографы: ЕСТР: VDO DTCO 1381, Stoneridge SE 5000 и Actia Smartach
-            </p>
+            <h3 class="card-price__title">АТОЛ Drive Smart</h3>
+            <ul class="catalog__list">
+              <li class="catalog__item">Для автомобилей любого года выпуска</li>
+              <li class="catalog__item">Надежность и низкое энергопотребление</li>
+              <li class="catalog__item">Приложение на андроид для выгрузки данных</li>
+              <li class="catalog__item">Видео инструкция для водителей</li>
+            </ul>
           </div>
           <div class="card-price__item-bottom">
-            <span class="card-price__price">3 750 руб.</span>
-            <span class="card-price__delivery">Бесплатная доставка 7-15 дней</span>
+            <span class="card-price__price">34 000 руб.</span>
+            <span class="card-price__delivery">С учетом установки и калибровки</span>
           </div>
         </li>
+
         <li class="card-price__item">
-          <img class="card-price__img" src="img/no-skzi-card.png" alt="">
+          <img class="card-price__img" src="img/ta.png" alt="">
           <div class="card-price__item-content">
-            <h3 class="card-price__title">Без блока СКЗИ</h3>
-            <p class="card-price__desc">
-              Поддерживает тахографы: Меркурий ТА-001, Штрих-М ТахоRUS, Касби - ДТ20.
-            </p>
+            <h3 class="card-price__title">Меркурий ТА-001</h3>
+            <ul class="catalog__list">
+              <li class="catalog__item">Наличие системы Глонасс и GPS</li>
+              <li class="catalog__item">Голосовая связь</li>
+              <li class="catalog__item">Уведомление о непрерывном вождении</li>
+              <li class="catalog__item">Выгрузка данных через GPRS</li>
+            </ul>
           </div>
           <div class="card-price__item-bottom">
-            <span class="card-price__price">3 450 руб.</span>
-            <span class="card-price__delivery">Бесплатная доставка 7-15 дней</span>
+            <span class="card-price__price">36 000 руб.</span>
+            <span class="card-price__delivery">С учетом установки и калибровки</span>
           </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="other-models">
+      <img src="img/othermodel.png" alt="">
+      <div class="other-models__wrapper">
+        <h2>Другие модели тахографов</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">С средством криптографической защиты информации (СКЗИ) VDO DTCO 3283, EFFS V2 RUS, Штрих - ТахоRUS, ТЦА-02НК, КАСБИ DT-20.</li>
+          <li class="catalog__item">C международным соглашением (ЕСТР) - VDO DTCO 1381, Stoneridge SE 5000 и Actia Smartach</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <section class="team">
+      <h2>Наша команда</h2>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__img">
+            <img src="img/kozlov.png" alt="">
+          </div>
+          <span class="team__name">Козлов Сергей</span>
+          <span class="team__position">Руководитель по развитию</span>
+          <span class="team__experience">Опыт работы 7 лет</span>
+        </li>
+        <li class="team__item">
+          <div class="team__img">
+            <img src="img/lukin.png" alt="">
+          </div>
+          <span class="team__name">Козлов Сергей</span>
+          <span class="team__position">Менеджер по продажам</span>
+          <span class="team__experience">Опыт работы 3 года</span>
+        </li>
+        <li class="team__item">
+          <div class="team__img">
+            <img src="img/akulov.png" alt="">
+          </div>
+          <span class="team__name">Акулов Вячеслав</span>
+          <span class="team__position">Инженер установщик</span>
+          <span class="team__experience">Опыт работы 3 года</span>
+        </li>
+        <li class="team__item">
+          <div class="team__img">
+            <img src="img/shaihov.png" alt="">
+          </div>
+          <span class="team__name">Шайхов Петр</span>
+          <span class="team__position">Инженер установщик</span>
+          <span class="team__experience">Опыт работы 5 лет</span>
         </li>
       </ul>
     </section>
@@ -163,13 +209,13 @@
     <section class="card-create-how">
       <iframe width="383" height="250" src="https://www.youtube.com/embed/q3LE8cl0IwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <div class="card-create-how__right-col">
-        <h2>Как сделать карту водителя СКЗИ и ЕСТР?</h2>
+        <h2  titles__h2--card-create-how">Как сделать карту водителя СКЗИ и ЕСТР?</h2>
         <p class="content__p">Для того, чтобы оформить карту водителя для тахографа, необходимо указать личные данные, загрузить фото или скан документов. Наши специалисты проверят документы и отправят заявку на изготовление карты.</p>
         <p class="content__p">Средний срок изготовление карты 7 - 14 дней, максимальное выполнение 30 дней. По готовности карты поступит уведомление на электронный адрес или СМС сообщение о готовности заказа. Доставка осуществляется по всей России, получить карту можно в пункте выдачи или заказать доставку курьера. </p>
       </div>
     </section>
     <section class="card-delivery">
-      <h2>Доставка водительских карт СКЗИ, ЕСТР
+      <h2 class="card-delivery__title">Доставка водительских карт СКЗИ, ЕСТР
         по всей России</h2>
       <div class="card-delivery__wrapper">
         <p class="card-delivery__list">
@@ -267,7 +313,7 @@
 
     </section>
     <section class="reviews">
-      <h2>Отзывы</h2>
+      <h2 ">Отзывы</h2>
         <ul class="reviews__list">
           <li class="reviews__item">
             <div class="reviews__user-info-wrapper">
@@ -359,7 +405,7 @@
       <div class="reviews__link"><a class="content__a reviews__link-a" href="">Отзывы SKZI.net</a></div>
     </section>
     <section class="faq">
-      <h2>Ответы на частые вопросы</h2>
+      <h2 ">Ответы на частые вопросы</h2>
       <div class="faq__wrapper">
         <div class="faq__left-col">
           <span class="faq__note">Если у вас появились вопросы, попробуйте найти ответ в этом блоке, возможно мы уже ответили на ваш вопрос.</span>

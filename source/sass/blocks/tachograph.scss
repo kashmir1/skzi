@@ -1,0 +1,36 @@
+.catalog {
+  h2 {
+    width: 485px;
+  }
+}
+
+.catalog__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B6B6B;
+  width: 538px;
+}
+
+.catalog__list {
+  @include liststyle-none;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B6B6B;
+  margin-top: 15px;
+}
+
+.catalog__item {
+  position: relative;
+  padding-left: 9px;
+  margin-bottom: 10px;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #6B6B6B;
+  }
+}

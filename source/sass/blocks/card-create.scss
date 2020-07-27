@@ -13,6 +13,7 @@
   margin-top: 4px;
   font-size: 16px;
   color: #6B6B6B;
+  line-height: 24px;
 }
 
 .card-create__rule {
@@ -26,4 +27,8 @@
   min-height: 48px;
   padding-left: 50px;
   line-height: 16px;
+}
+
+.card-create__subtext--tachograph {
+  width: 370px;
 }

@@ -5,12 +5,22 @@
   border-radius: 8px;
   box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.08);
   padding: 23px 32px 38px;
+
+  h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .form__label {
   position: relative;
   color: #A2A2A2;
   font-size: 12px;
+}
+
+.form__label--inner {
+  margin-bottom: 33px;
+  display: block;
 }
 
 .form__title {

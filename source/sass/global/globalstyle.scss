@@ -3,6 +3,7 @@ body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: 100%;
   font-family: "Gotham Pro", "Arial", sans-serif;
 }
 
@@ -10,4 +11,15 @@ body {
   width: 980px;
   margin-right: auto;
   margin-left: auto;
+}
+
+h1 {
+  font-size: 37px;
+  line-height: 48px;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 40px;
 }

@@ -315,12 +315,22 @@ body {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
+  background-size: 100%;
   font-family: "Gotham Pro", "Arial", sans-serif; }
 
 .container {
   width: 980px;
   margin-right: auto;
   margin-left: auto; }
+
+h1 {
+  font-size: 37px;
+  line-height: 48px;
+  margin-bottom: 0; }
+
+h2 {
+  font-size: 32px;
+  line-height: 40px; }
 
 .visually-hidden {
   position: absolute;
@@ -521,7 +531,8 @@ body {
   display: inline-block;
   margin-top: 4px;
   font-size: 16px;
-  color: #6B6B6B; }
+  color: #6B6B6B;
+  line-height: 24px; }
 
 .card-create__rule {
   color: #555555;
@@ -535,6 +546,9 @@ body {
   padding-left: 50px;
   line-height: 16px; }
 
+.card-create__subtext--tachograph {
+  width: 370px; }
+
 .form__small-form {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -544,11 +558,18 @@ body {
   -webkit-box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 0px 48px rgba(0, 0, 0, 0.08);
   padding: 23px 32px 38px; }
+  .form__small-form h2 {
+    font-size: 18px;
+    line-height: 24px; }
 
 .form__label {
   position: relative;
   color: #A2A2A2;
   font-size: 12px; }
+
+.form__label--inner {
+  margin-bottom: 33px;
+  display: block; }
 
 .form__title {
   font-size: 18px;
@@ -855,18 +876,17 @@ body {
 
 .card-delivery {
   margin-bottom: 87px; }
+  .card-delivery h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+    line-height: 32px;
+    width: 550px; }
 
 .card-delivery__list {
   white-space: pre-wrap;
   color: #555555;
   font-size: 14px;
   line-height: 20px; }
-
-.card-delivery__title {
-  font-size: 24px;
-  margin-bottom: 0;
-  line-height: 32px;
-  width: 550px; }
 
 .card-delivery__wrapper {
   display: -webkit-box;
@@ -941,6 +961,12 @@ body {
 
 .reviews__review {
   width: 476px; }
+
+.reviews__link {
+  width: 100%; }
+
+.reviews__link-a {
+  margin-left: auto; }
 
 .faq {
   margin-bottom: 88px; }
@@ -1359,5 +1385,101 @@ body {
   right: 23px;
   color: #4DB45E;
   font-size: 18px; }
+
+.catalog h2 {
+  width: 485px; }
+
+.catalog__description {
+  font-size: 16px;
+  line-height: 24px;
+  color: #6B6B6B;
+  width: 538px; }
+
+.catalog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6B6B6B;
+  margin-top: 15px; }
+
+.catalog__item {
+  position: relative;
+  padding-left: 9px;
+  margin-bottom: 10px; }
+  .catalog__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #6B6B6B; }
+
+.other-models {
+  -webkit-box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.other-models__wrapper {
+  padding-right: 100px;
+  margin-left: 50px; }
+
+.team__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 124px; }
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.team__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 165px;
+  height: 165px;
+  margin-bottom: 15px; }
+
+.team__name {
+  color: #000000;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 5px; }
+
+.team__position {
+  font-size: 14px;
+  color: #6B6B6B;
+  display: inline-block;
+  margin-bottom: 3px; }
+
+.team__experience {
+  font-size: 14px;
+  color: #4576F3;
+  font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */
