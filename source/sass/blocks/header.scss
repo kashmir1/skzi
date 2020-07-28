@@ -40,10 +40,10 @@
 
 .header__main-bar {
   background-color: #ffffff;
-  height: 64px;
   padding-bottom: 10px;
   box-sizing: border-box;
   @media (min-width: $desktop-width) {
+    height: 64px;
     display: flex;
     align-items: center;
   }

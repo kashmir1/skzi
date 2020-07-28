@@ -452,12 +452,12 @@ ul.breadcrumb li a:hover {
 
 .header__main-bar {
   background-color: #ffffff;
-  height: 64px;
   padding-bottom: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   @media (min-width: 980px) {
     .header__main-bar {
+      height: 64px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -503,7 +503,9 @@ ul.breadcrumb li a:hover {
   margin-top: 5px; }
 
 .navigation {
-  margin-top: 33px; }
+  margin-top: 33px;
+  background-color: #ffffff;
+  z-index: 1000; }
   @media (min-width: 980px) {
     .navigation {
       margin-top: 0;
