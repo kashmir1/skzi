@@ -1,8 +1,11 @@
+$desktop-width: 980px;
+$mobile-width: 979px;
+
 @import "global/normalize.scss";
 @import "global/globalstyle";
 @import "global/visually-hidden.scss";
 @import "global/font.scss";
-@import "global/variables.scss";
+@import "global/variables";
 @import "global/mixins.scss";
 @import "global/content";
 

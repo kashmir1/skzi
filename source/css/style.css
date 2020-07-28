@@ -322,9 +322,15 @@ body {
   background: none; }
 
 .container {
-  width: 980px;
+  max-width: 979px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-right: auto;
   margin-left: auto; }
+  @media (min-width: 980px) {
+    .container {
+      width: 980px;
+      padding: 0; } }
 
 h1 {
   font-size: 37px;
@@ -404,16 +410,29 @@ ul.breadcrumb li a:hover {
   padding-left: 12px; }
 
 .header__topbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-size: 12px;
-  color: #6B6B6B;
-  padding-top: 5px;
-  padding-bottom: 5px; }
+  display: none; }
+  @media (min-width: 980px) {
+    .header__topbar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      font-size: 12px;
+      color: #6B6B6B;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+
+.header__topbar--nav {
+  display: none; }
+  @media (max-width: 979px) {
+    .header__topbar--nav {
+      display: block;
+      position: absolute;
+      top: 470px;
+      font-size: 14px;
+      color: #6B6B6B; } }
 
 .header__email {
   display: -webkit-box;
@@ -422,6 +441,9 @@ ul.breadcrumb li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 979px) {
+    .header__email {
+      margin-top: 19px; } }
 
 .header__email-link {
   color: #6B6B6B;
@@ -431,24 +453,37 @@ ul.breadcrumb li a:hover {
 .header__main-bar {
   background-color: #ffffff;
   height: 64px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  padding-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (min-width: 980px) {
+    .header__main-bar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+
+.header__main-bar--inner {
+  -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12); }
 
 .header__logo {
   width: 98px;
   height: auto; }
 
 .header__main-bar-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  margin-top: 11px; }
+  @media (min-width: 980px) {
+    .header__main-bar-wrapper {
+      margin-top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 
 .header__phone {
   font-size: 18px;
@@ -456,6 +491,9 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
   line-height: 17px;
   font-weight: bold; }
+  @media (max-width: 979px) {
+    .header__phone {
+      font-size: 24px; } }
 
 .header__timetable {
   font-size: 12px;
@@ -465,29 +503,75 @@ ul.breadcrumb li a:hover {
   margin-top: 5px; }
 
 .navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  margin-top: 33px; }
+  @media (min-width: 980px) {
+    .navigation {
+      margin-top: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
 
 .navigation__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  font-weight: bold; }
+  font-size: 20px; }
+  @media (min-width: 980px) {
+    .navigation__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 14px;
+      font-weight: bold; } }
+
+.navigation__close {
+  display: none; }
+  @media (max-width: 979px) {
+    .navigation__close {
+      display: block;
+      position: relative; }
+      .navigation__close::before {
+        content: '';
+        position: absolute;
+        top: -23px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/hamburger.svg");
+        background-repeat: no-repeat; } }
+
+.navigation__open {
+  display: none; }
+  @media (max-width: 979px) {
+    .navigation__open {
+      display: block;
+      position: relative; }
+      .navigation__open::before {
+        content: '';
+        position: absolute;
+        top: -23px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/close.svg");
+        background-repeat: no-repeat; } }
+
+@media (max-width: 979px) {
+  .navigation__none {
+    display: none; } }
 
 .navigation__item {
-  margin-left: 32px;
-  height: 64px; }
+  height: 51px; }
+  @media (min-width: 980px) {
+    .navigation__item {
+      margin-left: 32px;
+      height: 64px; } }
 
 .navigation__link {
   display: -webkit-box;
@@ -505,6 +589,16 @@ ul.breadcrumb li a:hover {
 .navigation__link--active {
   color: #000000;
   border-bottom: 4px solid #4576F3; }
+  @media (max-width: 979px) {
+    .navigation__link--active {
+      margin-left: -16px;
+      border: 0;
+      background: #4576F3;
+      border-radius: 0px 8px 8px 0px;
+      max-width: 256px;
+      height: 51px;
+      color: #ffffff;
+      padding-left: 16px; } }
 
 .navigation__contacts {
   display: -webkit-box;
@@ -516,6 +610,11 @@ ul.breadcrumb li a:hover {
           flex-direction: column;
   text-align: right;
   margin-left: 32px; }
+  @media (max-width: 979px) {
+    .navigation__contacts {
+      text-align: left;
+      margin-left: 0;
+      margin-top: 170px; } }
 
 .titles__h1 {
   font-size: 37px;

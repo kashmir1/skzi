@@ -12,9 +12,17 @@ body {
 }
 
 .container {
-  width: 980px;
+
+  max-width: 979px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    width: 980px;
+    padding: 0;
+  }
 }
 
 h1 {

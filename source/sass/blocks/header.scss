@@ -1,15 +1,35 @@
 .header__topbar {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: #6B6B6B;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #6B6B6B;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.header__topbar--nav {
+
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    top: 470px;
+    font-size: 14px;
+    color: #6B6B6B;
+  }
 }
 
 .header__email {
   display: flex;
   align-items: center;
+  @media (max-width: $mobile-width) {
+    margin-top: 19px;
+  }
 }
 
 .header__email-link {
@@ -21,8 +41,16 @@
 .header__main-bar {
   background-color: #ffffff;
   height: 64px;
-  display: flex;
-  align-items: center;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header__main-bar--inner {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .header__logo {
@@ -31,8 +59,13 @@
 }
 
 .header__main-bar-wrapper {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 11px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__phone {
@@ -41,6 +74,10 @@
   text-decoration: none;
   line-height: 17px;
   font-weight: bold;
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+  }
 }
 
 .header__timetable {

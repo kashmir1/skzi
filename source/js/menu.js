@@ -1,14 +1,16 @@
-var navMain = document.querySelector('.main-nav');
+var navMain = document.querySelector('.navigation');
 var navToggle = document.querySelector('.main-nav__toggle');
 
-navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('click', function () {
-  if (!navToggle.classList.contains('main-nav__toggle--closed')) {
-    navToggle.classList.add('main-nav__toggle--closed');
-    navToggle.classList.remove('main-nav__toggle--opened');
+navToggle.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  if (!navToggle.classList.contains('navigation__close')) {
+    navToggle.classList.add('navigation__close');
+    navToggle.classList.remove('navigation__open');
+    navMain.classList.add('navigation__none');
   } else {
-    navToggle.classList.remove('main-nav__toggle--closed');
-    navToggle.classList.add('main-nav__toggle--opened');
+    navToggle.classList.remove('navigation__close');
+    navToggle.classList.add('navigation__open');
+    navMain.classList.remove('navigation__none');
   }
-})
+});

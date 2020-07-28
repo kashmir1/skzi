@@ -1,29 +1,88 @@
 .navigation {
-  display: flex;
-  align-items: center;
+  margin-top: 33px;
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation__list {
-  display: flex;
   list-style: none;
-  align-items: center;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.navigation__close {
+   display: none;
+   @media (max-width: $mobile-width) {
+     display: block;
+     position: relative;
+
+     &::before {
+       content: '';
+       position: absolute;
+       top: -23px;
+       right: 0;
+       width: 30px;
+       height: 30px;
+       background-image: url("../img/hamburger.svg");
+       background-repeat: no-repeat;
+     }
+   }
+ }
+
+.navigation__open {
+  display: none;
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -23px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/close.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.navigation__none {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .navigation__item {
-  margin-left: 32px;
-  height: 64px;
+
+  height: 51px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+    height: 64px;
+  }
 }
 
 .navigation__link {
+
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #6B6B6B;
   height: 64px;
+
 
   &:hover {
     color: #000000;
@@ -33,6 +92,17 @@
 .navigation__link--active {
   color: #000000;
   border-bottom: 4px solid #4576F3;
+
+  @media (max-width: $mobile-width) {
+    margin-left: -16px;
+    border: 0;
+    background: #4576F3;
+    border-radius: 0px 8px 8px 0px;
+    max-width: 256px;
+    height: 51px;
+    color: #ffffff;
+    padding-left: 16px;
+  }
 }
 
 .navigation__contacts {
@@ -40,6 +110,12 @@
   flex-direction: column;
   text-align: right;
   margin-left: 32px;
+
+  @media (max-width: $mobile-width) {
+    text-align: left;
+    margin-left: 0;
+    margin-top: 170px;
+  }
 }
 
 
