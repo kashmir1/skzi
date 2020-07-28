@@ -15,44 +15,48 @@
 <!--Хедер-->
 <body>
 
-   <header class="header">
-     <div class="container">
-       <div class="header__topbar">
-         <span class="header__topbar-text">Водительские карты онлайн</span>
-         <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net">info@skzi.net</a></div>
-       </div>
-     </div>
-     <div class="header__main-bar">
-       <div class="container header__main-bar-wrapper">
-         <img class="header__logo" src="img/logo.svg" alt="">
-         <nav class="navigation">
-           <ul class="navigation__list">
-             <li class="navigation__item">
-               <a class="navigation__link" href="">
-                 Водительские карты
-               </a>
-             </li>
-             <li class="navigation__item">
-               <a class="navigation__link navigation__link--active" href="">
-                 Купить тахограф
-               </a>
-             </li>
-             <li class="navigation__item">
-               <a class="navigation__link" href="">
-                 О компании
-               </a>
-             </li>
-           </ul>
-           <div class="navigation__contacts">
-             <a class="header__phone" href="+79003003030">8 900 300 30 30</a>
-             <span class="header__timetable">с 10:00 до 17:00 пн-пт</span>
-           </div>
+<header class="header">
+  <div class="container">
+    <div class="header__topbar">
+      <span class="header__topbar-text">Водительские карты онлайн</span>
+      <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net">info@skzi.net</a></div>
+    </div>
+  </div>
+  <div class="header__main-bar">
+    <div class="container header__main-bar-wrapper">
+      <img class="header__logo" src="img/logo.svg" alt="">
+      <a class="navigation__close main-nav__toggle" href=""></a>
+      <nav class="navigation navigation__none">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">
+              Водительские карты
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="">
+              Купить тахограф
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">
+              О компании
+            </a>
+          </li>
+        </ul>
+        <div class="navigation__contacts">
+          <a class="header__phone" href="+79003003030">8 900 300 30 30</a>
+          <span class="header__timetable">с 10:00 до 17:00 пн-пт</span>
+        </div>
+        <div class="header__topbar--nav">
+          <span class="header__topbar-text">Водительские карты онлайн</span>
+          <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net">info@skzi.net</a></div>
+        </div>
+      </nav>
+    </div>
 
-         </nav>
-       </div>
-
-     </div>
- </header>
+  </div>
+</header>
 
 <main class="main-page">
   <div class="container">
@@ -260,11 +264,14 @@
     </section>
 
   <div class="container">
-    <section class="card-delivery">
-      <h2 class="card-delivery__title">Доставка водительских карт СКЗИ, ЕСТР
-        по всей России</h2>
-      <div class="card-delivery__wrapper">
-        <p class="card-delivery__list">
+
+    <div class="delivery-how-order">
+
+      <section class="card-delivery">
+        <h2>Доставка водительских карт СКЗИ, ЕСТР
+          по всей России</h2>
+        <div class="card-delivery__wrapper">
+          <p class="card-delivery__list">
 Алтайский край
 Белгородская область
 Вологодская область
@@ -295,8 +302,8 @@
 Костромская область
 Курская область
 Москва
-        </p>
-        <p class="card-delivery__list">
+          </p>
+          <p class="card-delivery__list">
 Нижегородская область
 Оренбургская область
 Приморский край
@@ -326,8 +333,8 @@
 Республика Мордовия
 Республика Тыва
 Самарская область
-        </p>
-        <p class="card-delivery__list">
+          </p>
+          <p class="card-delivery__list">
 Свердловская область
 Тамбовская область
 Тюменская область
@@ -350,106 +357,200 @@
 Республика Хакасия
 Санкт-Петербург
 Севастополь
-Тверская областьreviews__link
+Тверская область
 Удмуртская Республика
 Челябинская область
 Ямало-Ненецкий АО
-        </p>
-      </div>
+          </p>
+          <p class="card-delivery__list--mobile">
+Алтайский край
+Белгородская область
+Вологодская область
+Ивановская область
+Калужская область
+Кировская область
+Курганская область
+Магаданская область
+Ненецкий АО
+Омская область
+Пермский край
+Республика Алтай
+Республика Ингушетия
+Республика Крым
+Республика Северная Осетия
+Ростовская область
+Саратовская область
+Смоленская область
+Томская область
+Ульяновская область
+Чеченская Республика
+Ярославская область
+Амурская область
+Брянская область
+Воронежская область
+Иркутская область
+Камчатский край
+Костромская область
+Курская область
+Москва
+Свердловская область
+Тамбовская область
+Тюменская область
+Ханты-Мансийский АО
+Чукотский АО
+Астраханская область
+Волгоградская область
+Забайкальский край
+Калининградская область
+Кемеровская область
+Красноярский край
+Липецкая область
+Мурманская область
 
-    </section>
-    <section class="reviews">
-      <h2>Отзывы</h2>
-      <ul class="reviews__list">
-        <li class="reviews__item">
-          <div class="reviews__user-info-wrapper">
-            <div class="reviews__img-container">
-              <img src="img/review1.png" alt="">
-            </div>
-            <div class="reviews__user-info">
-              <div class="reviews__user-name-container">
-                <span class="reviews__user-name">Олег Булаткин</span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
+          </p>
+          <p class="card-delivery__list--mobile">
+Нижегородская область
+Оренбургская область
+Приморский край
+Республика Башкортостан
+Республика Калмыкия
+Республика Марий Эл
+Республика Татарстан
+Рязанская область
+Сахалинская область
+Ставропольский край
+Тульская область
+Хабаровский край
+Чувашская Республика
+Архангельская область
+Владимирская область
+Еврейская А.обл.
+Кабардино-Балкарская Республика
+Карачаево-Черкесская Республика
+Краснодарский край
+Ленинградская область
+Московская область
+Новгородская область
+Орловская область
+Псковская область
+Республика Бурятия
+Республика Карелия
+Республика Мордовия
+Республика Тыва
+Самарская область
+Новосибирская область
+Пензенская область
+Республика Адыгея
+Республика Дагестан
+Республика Коми
+Республика Саха (Якутия)
+Республика Хакасия
+Санкт-Петербург
+Севастополь
+Тверская область
+Удмуртская Республика
+Челябинская область
+Ямало-Ненецкий АО
+
+
+          </p>
+        </div>
+
+      </section>
+      <section class="reviews">
+        <h2>Отзывы</h2>
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__user-info-wrapper">
+              <div class="reviews__img-container">
+                <img src="img/review1.png" alt="">
+              </div>
+              <div class="reviews__user-info">
+                <div class="reviews__user-name-container">
+                  <span class="reviews__user-name">Олег Булаткин</span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                </div>
+
+                <span class="reviews__date">01.04.2020</span>
               </div>
 
-              <span class="reviews__date">01.04.2020</span>
             </div>
+            <p class="reviews__review">Заказывал карту на сайте, оформил заявку и оплатил. На почту получил сообщение со списком документов.
+              Отправил свои документы, через 10 дней карта была у меня в Красноярске. Спасибо ребятам за быстрое выполнение карты.</p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__user-info-wrapper">
+              <div class="reviews__img-container">
+                <img src="img/review2.png" alt="">
+              </div>
+              <div class="reviews__user-info">
+                <div class="reviews__user-name-container">
+                  <span class="reviews__user-name">Андрей Кутузов</span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                </div>
 
-          </div>
-          <p class="reviews__review">Заказывал карту на сайте, оформил заявку и оплатил. На почту получил сообщение со списком документов.
-            Отправил свои документы, через 10 дней карта была у меня в Красноярске. Спасибо ребятам за быстрое выполнение карты.</p>
-        </li>
-        <li class="reviews__item">
-          <div class="reviews__user-info-wrapper">
-            <div class="reviews__img-container">
-              <img src="img/review2.png" alt="">
-            </div>
-            <div class="reviews__user-info">
-              <div class="reviews__user-name-container">
-                <span class="reviews__user-name">Андрей Кутузов</span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
+                <span class="reviews__date">01.04.2020</span>
               </div>
 
-              <span class="reviews__date">01.04.2020</span>
             </div>
+            <p class="reviews__review">Делал карту СКЗИ, так как моя закончилась. Перед оплатой заказа решил проверить компанию и позвонил в техподдержку. Компания действительна, карту получил на почте.</p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__user-info-wrapper">
+              <div class="reviews__img-container">
+                <img src="img/review3.png" alt="">
+              </div>
+              <div class="reviews__user-info">
+                <div class="reviews__user-name-container">
+                  <span class="reviews__user-name">Сергей Белов</span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                </div>
 
-          </div>
-          <p class="reviews__review">Делал карту СКЗИ, так как моя закончилась. Перед оплатой заказа решил проверить компанию и позвонил в техподдержку. Компания действительна, карту получил на почте.</p>
-        </li>
-        <li class="reviews__item">
-          <div class="reviews__user-info-wrapper">
-            <div class="reviews__img-container">
-              <img src="img/review3.png" alt="">
-            </div>
-            <div class="reviews__user-info">
-              <div class="reviews__user-name-container">
-                <span class="reviews__user-name">Сергей Белов</span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
+                <span class="reviews__date">01.04.2020</span>
               </div>
 
-              <span class="reviews__date">01.04.2020</span>
             </div>
+            <p class="reviews__review">Карту ЕСТР делал онлайн, оплатил на сайте и загран документы. Все работает, сроки такие же как и у всех
+              в течение 14 дней присылают. Менеджер сказал, что можно доставкой быстрее, но за отдельную плату. Заказывал обычной доставкой.</p>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__user-info-wrapper">
+              <div class="reviews__img-container">
+                <img src="img/review4.png" alt="">
+              </div>
+              <div class="reviews__user-info">
+                <div class="reviews__user-name-container">
+                  <span class="reviews__user-name">Евгений Локов</span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--yellow"></span>
+                  <span class="reviews__star reviews__star--gray"></span>
+                </div>
 
-          </div>
-          <p class="reviews__review">Карту ЕСТР делал онлайн, оплатил на сайте и загран документы. Все работает, сроки такие же как и у всех
-            в течение 14 дней присылают. Менеджер сказал, что можно доставкой быстрее, но за отдельную плату. Заказывал обычной доставкой.</p>
-        </li>
-        <li class="reviews__item">
-          <div class="reviews__user-info-wrapper">
-            <div class="reviews__img-container">
-              <img src="img/review4.png" alt="">
-            </div>
-            <div class="reviews__user-info">
-              <div class="reviews__user-name-container">
-                <span class="reviews__user-name">Евгений Локов</span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--yellow"></span>
-                <span class="reviews__star reviews__star--gray"></span>
+                <span class="reviews__date">01.04.2020</span>
               </div>
 
-              <span class="reviews__date">01.04.2020</span>
             </div>
+            <p class="reviews__review">Карту для тахографа получил немного с задержкой, не критично. Делал карту первый раз, чтобы не оштрафовали за езду без него. Всем удачи на дороге!</p>
+          </li>
+        </ul>
+        <div class="reviews__link"><a class="content__a reviews__link-a" href="">Отзывы SKZI.net</a></div>
+      </section>
+    </div>
 
-          </div>
-          <p class="reviews__review">Карту для тахографа получил немного с задержкой, не критично. Делал карту первый раз, чтобы не оштрафовали за езду без него. Всем удачи на дороге!</p>
-        </li>
-      </ul>
-      <div class="reviews__link"><a class="content__a reviews__link-a" href="">Отзывы SKZI.net</a></div>
-    </section>
     <section class="faq">
       <h2>Ответы на частые вопросы</h2>
       <div class="faq__wrapper">
@@ -626,6 +727,7 @@
      </div>
 
    </div>
+<script src="js/menu.js"></script>
    <script src="js/select.js"></script>
    <script src="js/faq.js"></script>
 

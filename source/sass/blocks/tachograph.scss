@@ -1,6 +1,6 @@
 .catalog {
   h2 {
-    width: 485px;
+    max-width: 485px;
   }
 }
 
@@ -8,7 +8,7 @@
   font-size: 16px;
   line-height: 24px;
   color: #6B6B6B;
-  width: 538px;
+  max-width: 538px;
 }
 
 .catalog__list {
