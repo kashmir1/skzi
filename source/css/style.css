@@ -692,6 +692,12 @@ ul.breadcrumb li a:hover {
               flex-direction: column;
       margin-top: 10px; } }
 
+.card-create--title {
+  margin-top: 53px; }
+  @media (max-width: 979px) {
+    .card-create--title {
+      margin-top: 10px; } }
+
 .card-create__left-col {
   max-width: 586px; }
   @media (max-width: 979px) {
@@ -797,15 +803,18 @@ ul.breadcrumb li a:hover {
   color: #5eaa2f;
   position: absolute;
   top: -15px;
-  left: 3px;
+  left: 2px;
   opacity: 0; }
+
+.form__span--fio {
+  top: -20px; }
 
 .form__span-select {
   font-size: 12px;
   color: #A2A2A2;
   position: absolute;
   top: -15px;
-  left: 3px;
+  left: 0;
   opacity: 1; }
 
 .form__span-select2 {
@@ -1811,8 +1820,7 @@ ul.breadcrumb li a:hover {
 .catalog__description {
   font-size: 16px;
   line-height: 24px;
-  color: #6B6B6B;
-  max-width: 538px; }
+  color: #6B6B6B; }
 
 .catalog__list {
   list-style: none;
