@@ -22,9 +22,9 @@ questions.forEach(function(el) {
 let selectSpan = document.querySelectorAll('.form__span-select');
 let themeButton = document.querySelectorAll('.select-selected');
 
-for (let i = 0; i < themeButton.length; i++) {
-  themeButton[i].addEventListener('click', function (evt) {
-    evt.preventDefault();
-    selectSpan[i].classList.toggle('form__span-select2');
-  })
-}
+// for (let i = 0; i < themeButton.length; i++) {
+//   themeButton[i].addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     selectSpan[i].classList.toggle('form__span-select2');
+//   })
+// }

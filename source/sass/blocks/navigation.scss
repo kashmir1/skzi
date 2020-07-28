@@ -5,6 +5,7 @@
     margin-top: 0;
     display: flex;
     align-items: center;
+    padding-top: 4px;
   }
 }
 
@@ -20,6 +21,7 @@
     align-items: center;
     font-size: 14px;
     font-weight: bold;
+
   }
 }
 
@@ -116,7 +118,7 @@
   @media (max-width: $mobile-width) {
     text-align: left;
     margin-left: 0;
-    margin-top: 170px;
+    margin-top: 70px;
   }
 }
 
