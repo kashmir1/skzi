@@ -12,45 +12,48 @@
 <!--Хедер-->
 <body class="no-bg">
 
-   <header class="header">
-     <div class="container">
-       <div class="header__topbar">
-         <span class="header__topbar-text">Водительские карты онлайн</span>
-         <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net">info@skzi.net</a></div>
-       </div>
-     </div>
-     <div class="header__main-bar header__main-bar--inner">
-       <div class="container header__main-bar-wrapper">
-         <img class="header__logo" src="img/logo.svg" alt="">
-         <nav class="navigation">
-           <ul class="navigation__list">
-             <li class="navigation__item">
-               <a class="navigation__link" href="">
-                 Водительские карты
-               </a>
-             </li>
-             <li class="navigation__item">
-               <a class="navigation__link" href="">
-                 Купить тахограф
-               </a>
-             </li>
-             <li class="navigation__item">
-               <a class="navigation__link navigation__link--active" href="">
-                 О компании
-               </a>
-             </li>
-           </ul>
-           <div class="navigation__contacts">
-             <a class="header__phone" href="tel:+79003003030">8 900 300 30 30</a>
-             <!--TODO: телефоны проверить-->
-             <span class="header__timetable">с 10:00 до 17:00 пн-пт</span>
-           </div>
+<header class="header">
+  <div class="container">
+    <div class="header__topbar">
+      <span class="header__topbar-text">Водительские карты онлайн</span>
+      <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net">info@skzi.net</a></div>
+    </div>
+  </div>
+  <div class="header__main-bar">
+    <div class="container header__main-bar-wrapper">
+      <img class="header__logo" src="img/logo.svg" alt="">
+      <a class="navigation__close main-nav__toggle" href=""></a>
+      <nav class="navigation navigation__none">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="">
+              Водительские карты
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="">
+              Купить тахограф
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link navigation__link--active" href="">
+              О компании
+            </a>
+          </li>
+        </ul>
+        <div class="navigation__contacts">
+          <a class="header__phone" href="+79003003030">8 900 300 30 30</a>
+          <span class="header__timetable">с 10:00 до 17:00 пн-пт</span>
+        </div>
+        <div class="header__topbar--nav">
+          <span class="header__topbar-text">Водительские карты онлайн</span>
+          <div class="header__email"><span class="header__topbar-text">Электронный запрос: </span><a class="header__email-link" href="mailto:info@skzi.net">info@skzi.net</a></div>
+        </div>
+      </nav>
+    </div>
 
-         </nav>
-       </div>
-
-     </div>
- </header>
+  </div>
+</header>
 
 <main class="main-page about">
 
@@ -79,7 +82,8 @@
         </div>
         <div class="about__contact-bottom">
           <span class="about__contact-title">Адрес</span>
-          <span  class="about__contact">г. Москва, 1-я бородинская ул. 1а</span>
+          <span  class="about__contact">г. Москва,
+1-я бородинская ул. 1а</span>
         </div>
       </div>
       <div class="about__ssl">
@@ -95,8 +99,7 @@
         <span class="about__sert-title">Лицензия №0006188
 от 26 июля 2018г</span>
         <p class="about__sert-desc">
-          Онлайн сервис сотрудничает с компанией ООО Тахограф,  которая является действующей организацией выполняющей установку, калибровку, ремонт тахографов, а также прием заявлений о выпуске, замене, обновлений водительских карт  для тахографа, согласно приказу Минтранспорта Российской Федерации №36 от 13.02.2013г.
-        </p>
+          Онлайн сервис сотрудничает с компанией ООО Тахограф, которая является действующей организацией выполняющей установку, калибровку, ремонт тахографов, а также прием заявлений о выпуске, замене, обновлений водительских карт для тахографа, согласно приказу Минтранспорта Российской Федерации №36 от 13.02.2013г.        </p>
       </div>
     </div>
   </div>
@@ -308,124 +311,8 @@
 
    </div>
 
-<!--   <div id="myModal-2" class="modal">-->
 
-<!--     &lt;!&ndash; Modal content &ndash;&gt;-->
-<!--     <div class="modal-content">-->
-<!--       <h2>Заполнение формы заявки</h2>-->
-<!--       <div class="modal__wrapper">-->
-<!--         <div class="modal__request-left-col">-->
-<!--           <div class="modal__input-wrapper">-->
-<!--             <label class="form__label" for="fio">Ваше ФИО</label>-->
-<!--             <input class="form__input" placeholder="Введите ваше ФИО" id="fio" type="text" required>-->
-<!--           </div>-->
-
-<!--           <div class="modal__input-wrapper">-->
-<!--             <label class="form__label" for="email">Электронная почта</label>-->
-<!--             <input class="form__input" placeholder="example@gmail.com" id="email" type="text" required>-->
-<!--           </div>-->
-
-<!--           <div class="modal__input-wrapper">-->
-<!--             <label class="form__label" for="tel">Телефон (необязательно)</label>-->
-<!--             <input class="form__input" placeholder="+7 (___) ___-__-__" id="tel" type="text">-->
-<!--           </div>-->
-
-<!--           <div class="modal__rules-wrapper">-->
-<!--             <input class="form__checkbox"  name="rule" type="checkbox" id="rule">-->
-<!--             <label class="form__custom-checkbox" for="rule">Я согласен с политикой конфидентиальности-->
-<!--               и договором оферты</label>-->
-<!--           </div>-->
-
-
-<!--           <h3>Доп. услуги:</h3>-->
-<!--           <div class="modal__service-wrapper">-->
-<!--             <div class="modal__service-check-wrapper">-->
-<!--               <div class="modal__service-check">-->
-<!--                 <input class="form__checkbox"  name="fast" type="checkbox" id="fast">-->
-<!--                 <label class="form__custom-checkbox form__custom-checkbox&#45;&#45;service" for="fast">Ускоренное изготовление карты</label>-->
-<!--               </div>-->
-<!--               <span class="modal__service-price">190 р.</span>-->
-<!--             </div>-->
-
-
-<!--             <div class="modal__service-note-wrapper">-->
-<!--               <span class="modal__service-note">Ваши документы будут отправлены с пометкой приоритетное изготовление</span>-->
-<!--               <span class="modal__term">Срок выполнения 7-10 дней</span>-->
-<!--             </div>-->
-<!--           </div>-->
-
-<!--           <div class="modal__service-wrapper">-->
-<!--             <div class="modal__service-check-wrapper">-->
-<!--               <div class="modal__service-check">-->
-<!--                 <input class="form__checkbox"  name="fast" type="checkbox" id="delivery" checked>-->
-<!--                 <label class="form__custom-checkbox form__custom-checkbox&#45;&#45;service" for="delivery">Курьерская доставка</label>-->
-<!--               </div>-->
-<!--               <span class="modal__service-price">490 р.</span>-->
-<!--             </div>-->
-
-
-<!--             <div class="modal__service-note-wrapper">-->
-<!--               <span class="modal__service-note">Карта водителя будет доставлена до адреса вашего дома.</span>-->
-<!--               <span class="modal__term">Срок получения карты 10-15 дней</span>-->
-<!--             </div>-->
-<!--           </div>-->
-
-<!--           <div class="modal__sum-wrapper">-->
-<!--             <span class="modal__sum-note">Сумма к оплате</span>-->
-<!--             <span class="modal__sum">3 850 рублей</span>-->
-<!--           </div>-->
-<!--           <div class="modal__button-wrapper">-->
-<!--             <a class="form__button form__button&#45;&#45;cancel close-2" href="">Отменить</a>-->
-<!--             <a class="form__button form__button&#45;&#45;pay" href="">Оплатить</a>-->
-<!--           </div>-->
-
-
-<!--         </div>-->
-<!--         <div class="modal__request-right-col">-->
-<!--           <div class="modal__docs-wrapper">-->
-<!--             <h3>Необходимые документы</h3>-->
-<!--             <span class="modal__docs-note">После оплаты заявки на изготовление карты водителя отправьте следующие документы на почту <a class="footer__email-link" href="mailto:info@skzi.net">info@skzi.net</a></span>-->
-<!--             <ul class="modal__docs-list">-->
-<!--               <li class="modal__docs-item modal__docs&#45;&#45;passport">Фото или скан паспорта-->
-<!--                 <span class="modal__docs-item-note">(1-2 стр., разворот с пропиской)</span>-->
-<!--               </li>-->
-
-<!--               <li class="modal__docs-item modal__docs&#45;&#45;drive-license">Фото или скан ВУ</li>-->
-
-<!--               <li class="modal__docs-item modal__docs&#45;&#45;card-copy">Копию карты водителя-->
-<!--                 <span class="modal__docs-item-note">(если оформляли ранее)</span>-->
-<!--               </li>-->
-
-<!--               <li class="modal__docs-item modal__docs&#45;&#45;snils">СНИЛС</li>-->
-
-<!--               <li class="modal__docs-item modal__docs&#45;&#45;photo">Фото 3x4 или четкое фото на белом фоне</li>-->
-
-<!--             </ul>-->
-<!--             <span class="modal__service-note">Наши специалисты заполнять заявление на выпуск карты-->
-<!--и отправят документы на изготовление.-->
-<!--</span>-->
-<!--             <span class="modal__service-note">Если у вас возникли вопросы, обратитесь в техническую поддержку сервиса <a class="content__a" href="mailto:info@skzi.net">info@skzi.net</a> </span>-->
-
-<!--           </div>-->
-<!--           <div class="modal__rule-wrapper">-->
-<!--                        <span class="card-create__rule">-->
-<!--      Сервис осуществляет передачу документов на изготовление, замену, обновление карт водителя для тахографа согласно приказу № 36 Минтранса РФ от 13.02.2013 г-->
-<!--    </span>-->
-
-<!--           </div>-->
-
-<!--         </div>-->
-<!--       </div>-->
-<!--       <span class="modal__step">Шаг 2 из 2</span>-->
-
-
-
-
-
-
-<!--     </div>-->
-
-<!--   </div>-->
+<script src="js/menu.js"></script>
 <script src="js/select.js"></script>
 <script src="js/faq.js"></script>
 <script src="js/modal.js"></script>

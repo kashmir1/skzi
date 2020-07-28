@@ -2188,7 +2188,10 @@ ul.breadcrumb li a:hover {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
-  width: 669px; }
+  max-width: 669px; }
+  @media (max-width: 979px) {
+    .about p {
+      font-size: 14px; } }
 
 .about .about__ssl-description {
   font-size: 16px;
@@ -2196,15 +2199,25 @@ ul.breadcrumb li a:hover {
   color: #6B6B6B;
   width: 100%;
   margin-bottom: 0; }
+  @media (max-width: 979px) {
+    .about .about__ssl-description {
+      font-size: 14px; } }
 
 .about .about__sert-desc {
   font-size: 14px;
   line-height: 20px;
-  width: 494px;
+  max-width: 494px;
   color: #6B6B6B; }
+  @media (max-width: 979px) {
+    .about .about__sert-desc {
+      font-size: 12px;
+      line-height: 17px; } }
 
 .about h2 {
   font-size: 28px; }
+  @media (max-width: 979px) {
+    .about h2 {
+      font-size: 20px; } }
 
 .about__tech {
   display: -webkit-box;
@@ -2214,12 +2227,18 @@ ul.breadcrumb li a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 66px; }
+  @media (max-width: 979px) {
+    .about__tech {
+      display: block; } }
 
 .about__ssl {
-  width: 478px; }
+  max-width: 478px; }
+  @media (max-width: 979px) {
+    .about__ssl {
+      margin-top: 38px; } }
 
 .about__contacts {
-  width: 412px; }
+  max-width: 412px; }
 
 .about__contacts-top {
   display: -webkit-box;
@@ -2228,6 +2247,9 @@ ul.breadcrumb li a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 979px) {
+    .about__contacts-top {
+      display: block; } }
 
 .about__contacts-top-left {
   display: -webkit-box;
@@ -2243,6 +2265,9 @@ ul.breadcrumb li a:hover {
   color: #6B6B6B;
   display: inline-block;
   margin-bottom: 8px; }
+  @media (max-width: 979px) {
+    .about__contact-title {
+      font-size: 14px; } }
 
 .about__contact {
   text-decoration: none;
@@ -2250,6 +2275,10 @@ ul.breadcrumb li a:hover {
   letter-spacing: -0.02em;
   color: #4576F3;
   font-weight: bold; }
+  @media (max-width: 979px) {
+    .about__contact {
+      font-size: 20px;
+      white-space: pre-wrap; } }
 
 .about__contact-bottom {
   margin-top: 10px;
@@ -2288,9 +2317,21 @@ ul.breadcrumb li a:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 65px; }
+  @media (max-width: 979px) {
+    .about__sert {
+      display: block; }
+      .about__sert img {
+        float: left;
+        width: 109px;
+        height: auto;
+        margin-right: 15px;
+        margin-bottom: 4px; } }
 
 .about__sert-wrapper {
   margin-left: 22px; }
+  @media (max-width: 979px) {
+    .about__sert-wrapper {
+      margin: 0; } }
 
 .about__sert-title {
   font-weight: bold;
