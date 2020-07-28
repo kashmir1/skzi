@@ -1723,12 +1723,16 @@ ul.breadcrumb li a:hover {
 
 #myModal-2 .modal-content {
   position: relative;
-  width: 620px;
+  max-width: 620px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 #myModal-2 .form__input {
   width: 274px; }
+  @media (max-width: 979px) {
+    #myModal-2 .form__input {
+      width: 100%;
+      margin-bottom: 33px; } }
 
 #myModal-2 .custom-select {
   width: 572px; }
@@ -1748,6 +1752,9 @@ ul.breadcrumb li a:hover {
   padding: 15px;
   outline: #cfcfcf;
   margin-bottom: 16px; }
+  @media (max-width: 979px) {
+    #myModal-2 textarea {
+      width: 100%; } }
 
 .modal__question-input {
   display: -webkit-box;
@@ -1756,6 +1763,9 @@ ul.breadcrumb li a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 979px) {
+    .modal__question-input {
+      display: block; } }
 
 .modal__close {
   position: absolute;
@@ -1778,6 +1788,11 @@ ul.breadcrumb li a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  @media (max-width: 979px) {
+    .modal__button-faq {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .catalog h2 {
   width: 485px; }

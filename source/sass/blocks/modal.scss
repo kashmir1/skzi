@@ -286,12 +286,17 @@
 
   .modal-content {
     position: relative;
-    width: 620px;
+    max-width: 620px;
     box-sizing: border-box;
   }
 
   .form__input {
     width: 274px;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+      margin-bottom: 33px;
+    }
   }
 
   .custom-select {
@@ -313,12 +318,20 @@
     padding: 15px;
     outline: #cfcfcf;
     margin-bottom: 16px;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
   }
 }
 
 .modal__question-input {
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .modal__close {
@@ -341,4 +354,8 @@
 .modal__button-faq {
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
 }
