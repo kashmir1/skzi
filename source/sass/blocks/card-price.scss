@@ -1,11 +1,19 @@
 .card-price {
   margin-top: 91px;
   margin-bottom: 75px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 165px;
+  }
 }
 
 .card-price__list {
   @include liststyle-none;
   display: flex;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .card-price__item {
@@ -16,6 +24,10 @@
   padding: 32px 24px 26px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    box-sizing: border-box;
+  }
 
   &:last-child {
     margin-right: 0;

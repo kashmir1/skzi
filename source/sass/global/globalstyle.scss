@@ -29,11 +29,20 @@ h1 {
   font-size: 37px;
   line-height: 48px;
   margin-bottom: 0;
+
+  @media (max-width: $mobile-width) {
+    font-size: 27px;
+    line-height: 35px;
+  }
 }
 
 h2 {
   font-size: 32px;
   line-height: 40px;
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 /* Style the list */
@@ -67,4 +76,11 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: #828282;
   text-decoration: underline;
+}
+
+.delivery-how-order {
+  @media (max-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;;
+  }
 }

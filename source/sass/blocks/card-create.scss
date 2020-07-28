@@ -2,10 +2,18 @@
   display: flex;
   justify-content: space-between;
   margin-top: 53px;
+  position: relative;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .card-create__left-col {
-  width: 586px;
+  max-width: 586px;
+  @media (max-width: $mobile-width) {
+    max-width: 979px;
+  }
 }
 
 .card-create__subtext {
@@ -19,7 +27,7 @@
 .card-create__rule {
   color: #555555;
   margin-top: 114px;
-  width: 418px;
+  max-width: 418px;
   font-size: 12px;
   display: inline-block;
   background-image: url("../img/emblem.png");
@@ -27,6 +35,13 @@
   min-height: 48px;
   padding-left: 50px;
   line-height: 16px;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    max-width: 979px;
+    bottom: -90px;
+    left: 0;
+  }
 }
 
 .card-create__subtext--tachograph {

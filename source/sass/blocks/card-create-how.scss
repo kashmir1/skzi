@@ -1,11 +1,43 @@
 .card-create-how {
   display: flex;
   margin-bottom: 73px;
+
+  iframe {
+    width: 383px;
+    height: 250px;
+
+    @media (max-width: $mobile-width) {
+      width: 328px;
+      height: 214px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    display: block;
+    margin-bottom: 56px;
+  }
 }
 
 .card-create-how__right-col {
-  width: 562px;
+  max-width: 562px;
   margin-left: 40px;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 0;
+
+    .content__p {
+      margin-top: 20px;
+    }
+  }
+
+  h2 {
+    margin-top: 0;
+    @media (max-width: $mobile-width) {
+      position: absolute;
+      top: -60px;
+    }
+  }
 }
 
 .card-create-how__right-col--tacho {

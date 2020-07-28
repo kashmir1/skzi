@@ -9,6 +9,11 @@
   line-height: 48px;
   font-weight: bold;
   color: #4576F3;
+
+  @media (max-width: $mobile-width) {
+    font-size: 27px;
+    line-height: 35px;
+  }
 }
 
 .titles__h2 {

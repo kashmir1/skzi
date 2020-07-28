@@ -5,6 +5,12 @@
 .about-card__wrapper {
   display: flex;
   justify-content: space-between;
+
+  img {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
 }
 
 .about-card__left-col {

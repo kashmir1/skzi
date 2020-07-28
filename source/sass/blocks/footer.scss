@@ -6,6 +6,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .footer__left-col {
@@ -78,6 +82,10 @@
 .footer__menu {
   display: flex;
   //flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .footer__menu-col {
@@ -86,6 +94,10 @@
 
 .footer__payment {
   margin-top: 25px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .footer__payment-logo {
@@ -108,5 +120,11 @@
   font-size: 12px;
   color: #FFFFFF;
   margin-left: 170px;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-left: 0;
+    margin-top: 13px;
+  }
 }
 
