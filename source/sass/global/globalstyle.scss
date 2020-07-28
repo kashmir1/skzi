@@ -5,6 +5,10 @@ body {
   background-position: 50% 0;
   background-size: 100%;
   font-family: "Gotham Pro", "Arial", sans-serif;
+
+  @media (max-width: $mobile-width) {
+    background-position: 0 50px;
+  }
 }
 
 .no-bg {

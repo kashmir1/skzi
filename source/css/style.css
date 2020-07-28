@@ -317,6 +317,9 @@ body {
   background-position: 50% 0;
   background-size: 100%;
   font-family: "Gotham Pro", "Arial", sans-serif; }
+  @media (max-width: 979px) {
+    body {
+      background-position: 0 50px; } }
 
 .no-bg {
   background: none; }
@@ -521,9 +524,7 @@ ul.breadcrumb li a:hover {
   margin-top: 5px; }
 
 .navigation {
-  margin-top: 33px;
-  background-color: #ffffff;
-  z-index: 1000; }
+  margin-top: 33px; }
   @media (min-width: 980px) {
     .navigation {
       margin-top: 0;
@@ -932,6 +933,10 @@ ul.breadcrumb li a:hover {
 .form__custom-checkbox--service {
   color: #000000;
   font-size: 16px; }
+  @media (max-width: 979px) {
+    .form__custom-checkbox--service {
+      font-size: 14px;
+      letter-spacing: -0.01em; } }
 
 .form__checkbox {
   height: 1px;
@@ -1485,7 +1490,19 @@ ul.breadcrumb li a:hover {
   /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 980px; }
+  max-width: 980px; }
+  @media (max-width: 979px) {
+    .modal-content {
+      max-width: 979px;
+      margin: 0; } }
+
+@media (max-width: 979px) {
+  #myModal h2 {
+    font-size: 18px; } }
+
+@media (max-width: 979px) {
+  #myModal h3 {
+    font-size: 16px; } }
 
 /* The Close Button */
 .modal__wrapper {
@@ -1495,12 +1512,31 @@ ul.breadcrumb li a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 979px) {
+    .modal__wrapper {
+      display: block; } }
 
 .modal__request-left-col {
-  width: 362px; }
+  max-width: 362px; }
+
+.modal__request-close {
+  display: none; }
+  @media (max-width: 979px) {
+    .modal__request-close {
+      display: block;
+      position: relative; }
+      .modal__request-close::before {
+        content: '';
+        position: absolute;
+        top: -73px;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        background-image: url("../img/close.svg");
+        background-repeat: no-repeat; } }
 
 .modal__request-right-col {
-  width: 452px;
+  max-width: 452px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1678,6 +1714,12 @@ ul.breadcrumb li a:hover {
   right: 23px;
   color: #4DB45E;
   font-size: 18px; }
+  @media (max-width: 979px) {
+    .modal__step {
+      position: static;
+      font-size: 14px;
+      display: inline-block;
+      margin-bottom: 16px; } }
 
 #myModal-2 .modal-content {
   position: relative;
