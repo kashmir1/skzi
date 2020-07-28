@@ -359,7 +359,7 @@
 
     </section>
     <section class="reviews">
-      <h2 ">Отзывы</h2>
+      <h2>Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
           <div class="reviews__user-info-wrapper">
@@ -451,7 +451,7 @@
       <div class="reviews__link"><a class="content__a reviews__link-a" href="">Отзывы SKZI.net</a></div>
     </section>
     <section class="faq">
-      <h2 ">Ответы на частые вопросы</h2>
+      <h2>Ответы на частые вопросы</h2>
       <div class="faq__wrapper">
         <div class="faq__left-col">
           <span class="faq__note">Если у вас появились вопросы, попробуйте найти ответ в этом блоке, возможно мы уже ответили на ваш вопрос.</span>
@@ -589,9 +589,51 @@
    <!-- The Modal -->
 
 
-<script src="js/select.js"></script>
-<script src="js/faq.js"></script>
-<script src="js/modal.js"></script>
+   <div id="myModal-2" class="modal">
+
+     <!-- Modal content -->
+     <div class="modal-content">
+       <h2>Задать вопрос</h2>
+       <form action="index.html" method="post">
+         <div class="modal__question-input">
+
+           <label class="form__label">
+             <input class="form__input" type="text" placeholder="Ваше ФИО" required>
+             <span class="form__span">Ваше ФИО</span>
+           </label>
+           <label class="form__label">
+             <input class="form__input" type="text" placeholder="Email" required>
+             <span class="form__span">Email</span>
+           </label>
+         </div>
+         <div class="form__select-wrapper">
+           <div class="custom-select form__select-type">
+             <select>
+               <option value="0">Тема вопроса</option>
+               <option value="1">Тема 1</option>
+               <option value="2">Тема 2</option>
+             </select>
+             <span class="form__span-select">Тип заявления</span>
+           </div>
+         </div>
+         <div class="modal__question-input">
+           <textarea name="" id=""></textarea>
+         </div>
+
+         <a class="modal__close close-2" href=""></a>
+         <div class="modal__button-faq">
+           <button type="submit" class="form__button form__button--pay">Задать вопрос</button>
+         </div>
+
+
+       </form>
+
+     </div>
+
+   </div>
+   <script src="js/select.js"></script>
+   <script src="js/faq.js"></script>
+
    <script src="js/jquery.inputmask.js"></script>
    <script>
      $(":input").inputmask();
@@ -606,11 +648,26 @@
        });
      });
 
-     // $('#myBtn-3').click(function(){
-     //   $('#form-container').hide(function() {
-     //     $('#successform').show();
-     //   });
-     // });
+
+     //modal
+     var modal2 = document.getElementById("myModal-2");
+     var btn2 = document.getElementById("myBtn-2");
+     var span2 = document.getElementsByClassName("close-2")[0];
+     btn2.onclick = function(evt) {
+       evt.preventDefault();
+       modal2.style.display = "block";
+     };
+
+     span2.onclick = function(evt) {
+       evt.preventDefault();
+       modal2.style.display = "none";
+     };
+     window.onclick = function(event) {
+       if (event.target == modal2) {
+         modal2.style.display = "none";
+       }
+     };
+
 
    </script>
 </body>
